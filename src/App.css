@@ -1,0 +1,9 @@
+.appmain {
+  background: linear-gradient(
+    90deg,
+    hsla(287, 76%, 37%, 1) 0%,
+    hsla(281, 66%, 37%, 1) 20%,
+    hsla(247, 63%, 55%, 1) 80%,
+    hsla(226, 58%, 52%, 1) 100%
+  );
+}
