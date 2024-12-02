@@ -1,17 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { Button } from "@src/components/ui/button";
+import { ChevronRight } from "lucide-react";
+import { Mail } from "lucide-react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
+      <div className="bg-background text-foreground">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
+        <div>
+          <Button>Button</Button>
+          <Button variant="secondary" size="icon">
+            <ChevronRight />
+          </Button>
+          <Button size="default">
+            <Mail /> Login with Email
+          </Button>
+          <Button size="default" variant="secondary">
+            <Mail /> Login with Email
+          </Button>
+          <Button size="default" variant="outline">
+            <Mail /> Login with Email
+          </Button>
+          <Button size="default" variant="ghost">
+            <Mail /> Login with Email
+          </Button>
+        </div>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
@@ -29,7 +50,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
