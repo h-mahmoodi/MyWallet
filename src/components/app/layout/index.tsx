@@ -1,11 +1,11 @@
 import { Outlet } from "react-router";
-import AppHeader from "./header";
+import AppHeader from "../header";
 
 const AppLayout = () => {
   return (
     <section className="h-screen">
       <AppHeader />
-      <main className="bg-background h-full">
+      <main className=" h-full">
         <Outlet />;
       </main>
       <footer>footer</footer>
