@@ -1,0 +1,45 @@
+.section {
+  /* background: #06030e;  */
+  height: 100vh;
+  /* margin-top: 30px; */
+  /* animation: animation 100s linear infinite; */
+  background-position: 100% 40%;
+  background-size: 300%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.section:before {
+  content: "";
+  background-image: url("./bg.png");
+  background-position: 100% 40%;
+  background-size: 110%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.3;
+  /* animation: animation 100s linear infinite; */
+}
+
+@keyframes animation {
+  0% {
+    background-position: 100% 40%;
+  }
+  50% {
+    background-position: 0% 40%;
+  }
+  100% {
+    background-position: 100% 40%;
+  }
+}
+
+.backdrop {
+  @apply absolute top-0 left-0 w-full h-full z-0 backdrop-brightness-50;
+  background: url("./bg.png");
+  background-size: 110%;
+  background-position: 100% 0%;
+  opacity: 0.3;
+}

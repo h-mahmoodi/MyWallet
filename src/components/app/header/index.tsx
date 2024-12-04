@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const AppHeader = () => {
   return (
-    <header className="py-3 fixed top-0 w-full">
+    <header className="py-5 w-full z-50 relative">
       <div className="flex justify-between items-center container mx-auto">
         <h1 className="text-2xl font-bold leading-none">My Wallet App</h1>
         <nav className="flex gap-3">

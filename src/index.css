@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -54,6 +56,10 @@
     @apply border-border;
   }
   body {
-    @apply font-sans antialiased bg-zinc-200 dark:bg-black text-foreground;
+    font-family: "Nunito";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    @apply antialiased bg-zinc-200 dark:bg-black text-zinc-950 dark:text-zinc-50;
   }
 }
