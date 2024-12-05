@@ -2,7 +2,7 @@ import { ToggleDarkMode } from "@src/components/ToggleDarkMode";
 import { Button } from "@src/components/ui/button";
 import { Link } from "react-router";
 
-const AppHeader = () => {
+const Header = () => {
   return (
     <header className="py-5 w-full z-50 relative">
       <div className="flex justify-between items-center container mx-auto">
@@ -17,4 +17,4 @@ const AppHeader = () => {
     </header>
   );
 };
-export default AppHeader;
+export default Header;

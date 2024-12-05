@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import DashboardRoutes from "./dashboard";
-import AppRoutes from "./app";
+import AppRoutes from "./AppRoutes";
+import DashboardRoutes from "./DashboardRoutes";
 
-const AppRouter = () => {
+const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -12,4 +12,4 @@ const AppRouter = () => {
     </BrowserRouter>
   );
 };
-export default AppRouter;
+export default Router;
