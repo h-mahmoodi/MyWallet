@@ -1,5 +1,4 @@
-import DashboardLayout from "@src/components/dashboard/layout";
-import ProtectedRoutes from "@src/components/dashboard/protected-routes";
+import { DashboardLayout, ProtectedRoutes } from "@src/components/dashboard";
 import { Route, Routes } from "react-router";
 
 const DashboardRoutes = () => {
