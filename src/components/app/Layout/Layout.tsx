@@ -1,12 +1,12 @@
 import { Outlet } from "react-router";
-import AppHeader from "../header";
+import Header from "../Header/Header";
 
-import styles from "./styles.module.css";
+import styles from "./Layout.module.css";
 
-const AppLayout = () => {
+const Layout = () => {
   return (
     <section className={`relative bg-zinc-200 dark:bg-zinc-950 h-screen`}>
-      <AppHeader />
+      <Header />
       <main className="z-50 h-full">
         <Outlet />;
       </main>
@@ -15,4 +15,4 @@ const AppLayout = () => {
     </section>
   );
 };
-export default AppLayout;
+export default Layout;

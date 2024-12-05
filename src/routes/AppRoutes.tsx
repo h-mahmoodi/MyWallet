@@ -1,4 +1,4 @@
-import AppLayout from "@src/components/app/layout";
+import { AppLayout } from "@src/components/app";
 import AppHomePage from "@src/pages/app/home-page";
 import { Route, Routes } from "react-router";
 
