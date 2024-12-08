@@ -1,4 +1,5 @@
 import { DashboardLayout, ProtectedRoutes } from "@src/components/dashboard";
+import { DashboardHomePage } from "@src/pages/dashboard";
 import { Route, Routes } from "react-router";
 
 const DashboardRoutes = () => {
@@ -12,7 +13,7 @@ const DashboardRoutes = () => {
           </ProtectedRoutes>
         }
       >
-        <Route index element={<div>Dashboard Home</div>} />
+        <Route index element={<DashboardHomePage />} />
       </Route>
     </Routes>
   );
